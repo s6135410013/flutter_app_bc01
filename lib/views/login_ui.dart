@@ -185,6 +185,118 @@ class _LoginUIState extends State<LoginUI> {
                   ),
                 ),
               ),
+              Padding(
+                padding: const EdgeInsets.only(
+                  left: 50.0,
+                  right: 50.0,
+                ),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Expanded(
+                      child: TextButton(
+                        onPressed: () {},
+                        child: Text(
+                          "Forget password?",
+                          style: TextStyle(
+                            fontFamily: "Kanit",
+                            fontWeight: FontWeight.bold,
+                            color: Colors.redAccent[400],
+                          ),
+                        ),
+                        style: TextButton.styleFrom(
+                          alignment: Alignment.centerLeft,
+                        ),
+                      ),
+                    ),
+                    Expanded(
+                      child: TextButton(
+                        style: TextButton.styleFrom(
+                          alignment: Alignment.centerRight,
+                        ),
+                        onPressed: () {},
+                        child: Text(
+                          "Register",
+                          style: TextStyle(
+                            fontFamily: "Kanit",
+                            fontWeight: FontWeight.bold,
+                            color: Colors.blue[600],
+                          ),
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+              Padding(
+                padding: const EdgeInsets.only(
+                  left: 50.0,
+                  right: 50.0,
+                ),
+                child: OutlinedButton(
+                  onPressed: () {},
+                  child: Text(
+                    "Sign in",
+                    style: TextStyle(
+                      fontFamily: "Kanit",
+                      color: Colors.teal[600],
+                      fontWeight: FontWeight.bold,
+                      fontSize: 30.0,
+                    ),
+                  ),
+                  style: OutlinedButton.styleFrom(
+                    fixedSize: Size(
+                      MediaQuery.of(context).size.width,
+                      50,
+                    ),
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(
+                        30,
+                      ),
+                    ),
+                    side: BorderSide(
+                      color: Colors.teal,
+                    ),
+                    backgroundColor: Colors.tealAccent[100],
+                  ),
+                ),
+              ),
+              Padding(
+                padding: const EdgeInsets.only(
+                  left: 50.0,
+                  right: 50.0,
+                  top: 8.0,
+                ),
+                child: Row(
+                  children: [
+                    Expanded(
+                      child: Container(
+                        height: 2.0,
+                        color: Colors.black,
+                      ),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.only(
+                        left: 5.0,
+                        right: 5.0,
+                      ),
+                      child: Text(
+                        "or",
+                        style: TextStyle(
+                          fontFamily: "Staatliches",
+                          fontSize: 20.0,
+                        ),
+                      ),
+                    ),
+                    Expanded(
+                      child: Container(
+                        height: 2.0,
+                        color: Colors.black,
+                      ),
+                    ),
+                  ],
+                ),
+              ),
             ],
           ),
         ),
