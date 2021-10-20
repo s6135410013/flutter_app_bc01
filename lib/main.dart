@@ -1,11 +1,14 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_app_bc01/views/login_ui.dart';
+import 'package:flutter_app_moneyshare/views/home.dart';
 
 void main() {
   runApp(
     MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: LoginUI(), //Call HomeUI
+      home: Home(), //Call HomeUI
+      theme: ThemeData(
+        fontFamily: "Kanit",
+      ),
     ),
   );
 }
